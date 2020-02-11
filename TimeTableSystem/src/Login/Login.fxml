@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="splashAnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.LoginController">
+   <children>
+      <TextField fx:id="username" layoutX="136.0" layoutY="143.0" prefHeight="35.0" prefWidth="353.0" promptText="UserID" />
+      <PasswordField fx:id="password" layoutX="136.0" layoutY="207.0" prefHeight="35.0" prefWidth="353.0" promptText="Password" />
+      <AnchorPane prefHeight="44.0" prefWidth="602.0" style="-fx-background-color: blue;">
+         <children>
+            <Text fill="WHITE" layoutX="18.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time Table System V 1.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="566.0" layoutY="30.0" onMouseClicked="#closeme" strokeType="OUTSIDE" strokeWidth="0.0" text="X" wrappingWidth="33.037109375">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="lgbtn" layoutX="217.0" layoutY="261.0" prefHeight="24.0" prefWidth="177.0" style="-fx-background-color: blue;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <Text layoutX="226.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="lgbtn1" layoutX="165.0" layoutY="359.0" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="279.0" style="-fx-background-color: blue;" text="Create New Account" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
